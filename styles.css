@@ -1,74 +1,97 @@
-/*Author: Hira Yasir*/
+/* Author: Hira Yasir */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Date: 11/30/2024 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+/* Course: GIT 414 */
 
-/**/
+    /* CSS Reset */
 
-:root{
-    /* --- COLORS --- */
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /*TYPOGRAPHY*/
+
+    :root{
+    /* --- COLOR PLALETE --- */
     --yellow: #F6D64A;
     --teal: #55BCD5;
     --purple: #9B26B0;
     --blue: #499BD2;
     --dkGray: #222222;
     --ltGray: #EAEAEA;
-    --white: #FFF;
-    --black: #000;
+    --white: #FFFFFF;
+    --black: #000000;
 
-    /* --- FONTS --- */
+    /* --- GOOGLE FONTS --- */
     --molle-font: "Molle", cursive;
     --mont-font: "Montserrat", sans-serif;
-    font-size: 16px;
+    	font-size: 16px;
 }
 
-/* ----- BODY ----- */
+    /* ----- SKIP LINK STYLES ----- */
+    /* Source FROM --> https://webaim.org/techniques/css/invisiblecontent/ */
+    #skip{
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+
+    #skip:focus{
+      position: static;
+      width: auto;
+      height: auto;
+    }
+
+
 html {
     width: 100%;  
 }
@@ -108,23 +131,7 @@ p {
     line-height: 1.5em;
 }
 
-/* -----  ----- */
-#skip{
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
 
-#skip:focus  {
-	position: static;
-	width: auto;
-	height: auto;
-}
-
-/* ----- HEADER ----- */
 header {
     background-image: linear-gradient(to bottom, var(--teal) 0%,  var(--white) 100%);
     display: grid;
@@ -141,7 +148,7 @@ header p {
     margin-left: -2em;
 }
 
-/* ----- NAV ----- */
+
     nav {
         display: block;
         margin: 0;
@@ -199,7 +206,7 @@ header p {
         display: none;
     }
 
- /* ----- INTRO ----- */
+
     #intro h2, #intro p {
         padding: 10px 28px;
     }
@@ -214,7 +221,7 @@ header p {
         width: 100%;
         height: 100%;
     }
-/* ----- TESTIMONIALS ----- */
+
     #testimonials { 
         padding: 2em;
     }
@@ -237,7 +244,6 @@ header p {
         max-width: 14em;
     }
 
-/* ----- ABOUT ----- */
     #about {
         background-color: var(--blue);
         padding: 2em;
@@ -271,7 +277,7 @@ header p {
         font-size: 1.25em;
 }
 
-/* ----- CONTACT ----- */
+
     #contact {
         padding: 2.5em;
     }
@@ -333,7 +339,7 @@ input, select {
         background-color: var(--purple);
     }
 
-/* custome radio button Source --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+/* Source FROM --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
     input[type="radio"] {
         -webkit-appearance: none;
         appearance: none;
@@ -371,7 +377,7 @@ input, select {
         margin-left: 0
     }
 
-    /* custom radio button source --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+    /* Source FROM --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
     *, *::before, *::after {
         box-sizing: border-box;
     }
@@ -436,7 +442,7 @@ select::-ms-expand {
         margin: 0 0.5em;
       }
 
-    /**/
+
     #plan {
         background-color: var(--yellow);
         padding: 2em;
@@ -477,7 +483,6 @@ select::-ms-expand {
         margin-bottom: 1em;
 }
 
-/* -----  ----- */
 
 footer {
     background-color: var(--ltGray);
@@ -502,3 +507,388 @@ footer p, footer a {
     overflow: hidden;
     clip-path: inset(50%);
 }
+
+/* ----- MEDIA QUERIES ----- */
+
+/* EXTRA SMALL */
+@media screen and (min-width: 320px) {
+    header {
+        padding: 0.5em 1em;
+        display: block;
+        text-align: center;
+    }
+
+  /* SMALL */
+@media screen and (min-width: 480px) {
+    header {
+        padding: 1em 2em;
+        display: block;
+        text-align: left;
+    }
+
+
+
+/* MEDIUM */
+    @media screen and (min-width: 768px){
+        
+            header {
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 2fr 1fr;
+                padding: 1em 3em;
+            }
+
+            header h1, header p {
+                grid-column: 2 / -1;
+                grid-row: 1 /2;
+            }
+            
+            header h1 {
+                margin-top: -1.5em;
+            }
+
+            header p {
+                padding-top: 3.5em;
+                padding-right: 1em;
+            }
+
+            #logo img {
+            width: 100%;
+            padding-top: 1em;
+            margin: 0;
+             }
+      
+     
+                nav {
+                    grid-column: 1 / -1;
+                    padding: 1em 2em;
+                }
+                
+                #menu-toggle {
+                    position: static;
+                    background-color: transparent;
+                    padding: 0;
+                }
+
+                nav ul {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0.75em;
+                    padding: 0;
+                    background-color: transparent;
+                    position: static;
+                }
+
+                nav a {
+                    background-color: var(--white);
+                    border: none;
+                    padding: 1.25em 0.75em;
+                }
+
+                nav a:hover {
+                    background-color: var(--yellow);
+                }    
+                .active a {
+                    background-color: var(--yellow);
+                }
+
+                #toggle, #menu-toggle label {
+                    display: none;
+                }
+
+            /* ----- BODY SECTION ----- */
+      
+            #intro, #plan, #testimonials, #about, #contact {
+                padding: 1em 3em;
+            }
+
+            h3 {
+                padding: 10px 28px;
+            }
+
+            
+                #intro {
+                    padding-top: 1em;
+                }
+
+                #intro h2 {
+                    padding-bottom: 0;
+                    padding-top: 0;
+                }
+                #img-grid {
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 1em;
+                    margin: 0 2em;
+                }
+
+                #img-grid img:first-of-type {
+                    grid-column: 2;
+                }
+
+                #img-grid img:nth-child(2) {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+
+                #img-grid picture {
+                    grid-column: 1 / -1;
+                }
+
+               
+                #plan {
+                    margin: 0;
+                }
+
+                #plan div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 2em;
+                    justify-content: center;
+                    padding: 10px 28px;
+                }
+                 #plan section {
+                    margin: auto;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1.5em;
+                }
+
+                #plan img {
+                    width: 70%;
+                    height: 70%;
+                    padding: 1em;
+                }
+
+                #plan section:nth-child(2) > a > img {
+                    width: 95%;
+                }
+
+              
+                #testimonials div {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                #testimonials h4 {
+                    font-size: 2em;
+                }
+
+                #testimonials p {
+                    font-size: 1.25em;
+                }
+      
+  
+                #about div {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+        
+
+                #contact {
+                    padding: 6em;
+                }
+
+                input, label, select, textarea  {
+                    width: 100%;
+                }
+
+                fieldset {
+                    display: flex;
+                    justify-content: space-between;
+                    width: auto;
+                    margin: 0;
+                }
+
+                fieldset label {
+                    width: auto;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #mySubmit {
+                    width: 15em;
+                    float: right;
+                }
+      
+    
+            footer {
+                clear: right;
+                display: flex;
+                padding-left: 3em;
+                padding-right: 3em;
+            }
+    }
+
+/* MEDIUM PLUS */
+    @media screen and (min-width: 1024px){
+            /* ----- ----- */
+            #plan div {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+            }
+        }
+
+/* LARGE */
+    @media screen and (min-width: 1440px){
+       
+        header {
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: 1fr;
+            padding: 0 0 3em;
+        }
+
+        header h1 {
+            margin: 0 0 0.25em;
+            font-size: 4em;
+        }
+
+        header p {
+            align-self: flex-end;
+            font-size: 1.5em;
+        }
+
+        #logo img {
+            width: 22em;
+            margin: 0 -3em;
+        }
+      
+  
+            nav {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+              
+            }
+
+            nav a {
+                padding: 0.75em 0.5em;
+            }
+
+       /* ----- BODY SECTION ----- */
+      
+        #intro, #plan, #testimonials, #about, #contact {
+            padding: 6em;
+        }
+
+           
+            #intro {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 1fr;
+            }
+            
+            #intro h2, #intro p {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            #intro p {
+                padding-top: 3em;
+            }     
+
+            #img-grid {
+                margin: 0;
+            }
+
+         
+            #testimonials div {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1.5em;
+            }
+ #testimonials section {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #testimonials img {
+                width: 50%;
+            }
+
+         
+            #about div {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            #about section:first-of-type {
+                grid-column: 2;
+            }
+
+            #about img {
+                height: 125px;
+            }
+            
+          
+            form {
+                display: grid;
+                grid-template-columns: repeat(3, 33.33%);
+                gap: 1em;
+            }
+            #names {
+                grid-column: 1;
+            }
+
+            #nums {
+                grid-column: 2;
+            }
+
+            #selects {
+                grid-column: 3;
+            }
+
+            /* --- --- */
+            .radio-input {
+                margin: 0;
+                padding: 0;
+            }
+
+            input[type="radio"] {
+                width: 1em;
+                height: 1em;
+            }
+
+            input[type="radio"]:checked::before {
+                transform: scale(0.5);
+            }
+
+            #prefEmail, #prefText, #prefPhone {
+                margin: 1.9em 0; 
+            }
+
+            #mySubmit {
+                width: 10em;
+            }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            padding-left: 6em;
+            padding-right: 6em;
+        }
+        footer p {
+            grid-column: span 2;
+        }
+        
+        footer a:first-of-type {
+            grid-column: 5;
+        }
+    }
+/* ---- EXTRA LARGE ---- */
+    @media screen and (min-width: 1420px){
+        input[type="radio"] {
+            width: 3em;
+            height: 3em;
+        }
+
+        input[type="radio"]:checked::before {
+            transform: scale(3.5);
+        }
+        
+        #prefEmail, #prefText, #prefPhone {
+            margin: 1em 0;
+        }
+    }
