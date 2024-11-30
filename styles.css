@@ -333,7 +333,7 @@ input, select {
         background-color: var(--purple);
     }
 
-/* CUSTOM RADIO BUTTON HELP FROM -- https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+/* custome radio button Source --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
     input[type="radio"] {
         -webkit-appearance: none;
         appearance: none;
@@ -371,13 +371,12 @@ input, select {
         margin-left: 0
     }
 
-    /* CUSTOM SELECT HELP FROM -- https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+    /* custom radio button source --> https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
     *, *::before, *::after {
         box-sizing: border-box;
     }
 
     select {
-         /* A reset of styles, including removing the default dropdown arrow */
         appearance: none;
         background-color: transparent;
         border: none;
@@ -437,7 +436,7 @@ select::-ms-expand {
         margin: 0 0.5em;
       }
 
-/* ----- PLAN ----- */
+    /**/
     #plan {
         background-color: var(--yellow);
         padding: 2em;
